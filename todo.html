@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .checked {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <input type="text" name="" id="input-field" placeholder="Add Task" />
+
+      <button id="task-btn">Add Task</button>
+      <ul class="list-container"></ul>
+    </div>
+
+    <script>
+      let inputfield = document.getElementById("input-field");
+      let taskbtn = document.getElementById("task-btn");
+      let listcontainer = document.querySelector(".list-container");
+
+      taskbtn.addEventListener("click", function () {
+        if (inputfield.value === "") {
+          alert("Enter a Task");
+        } else {
+          let li = document.createElement("li");
+          li.innerHTML = inputfield.value;
+          console.log(li);
+          listcontainer.appendChild(li);
+          let span = document.createElement("span");
+          span.innerHTML = "Remove";
+          listcontainer.appendChild(span);
+          inputfield.value = "";
+        }
+      });
+
+      listcontainer.addEventListener("click", function (e) {
+        if (e.target.tagName === "LI") {
+          e.target.classList.toggle("checked");
+        }else if(e.target.tagName === 'SPAN'){
+            e.target.parentElement.remove();
+        }
+      });
+    </script>
+  </body>
+</html>

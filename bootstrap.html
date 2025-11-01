@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+
+
+    <link rel="stylesheet" href="/bootstrap.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top ">
+        <div class="container">
+            <a class="navbar-brand" href="#"><span class="text-primary">Landing Page</span></a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section bg-dark">
+        <!-- slider -->
+        <div id="carouselExampleCaptions" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/project-1-img/home-1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Your Dream House</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/project-1-img/home-2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Your Dream House</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="/project-1-img/home-3.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Your Dream House</h5>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <!-- about -->
+
+        <div id="about"
+            class="about w-100 min-vh-100 d-flex flex-column justify-content-center align-items-center text-center pt-4 ">
+            <div class="abouttxt mb-4 text-primary">
+                <h1>About Us</h1>
+            </div>
+            <div class="aboutdetails w-75 text-white">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint repellendus tempora officiis deserunt
+                    assumenda necessitatibus facilis facere, commodi, est omnis veritatis in consectetur, inventore
+                    voluptates? Ipsum laboriosam adipisci ratione repellendus. Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Delectus, voluptatum fuga doloribus porro quibusdam ab id temporibus! Adipisci
+                    tenetur, labore, nisi accusamus, non esse placeat molestias impedit beatae quibusdam cupiditate?
+                </p>
+            </div>
+        </div>
+
+        <!-- projects -->
+        <div id="projects" class="projects w-100 max-h-100vh p-4">
+            <div class="projecttxt text-center text-primary mb-4 mt-4">
+                <h1>Projects</h1>
+            </div>
+            <div class="projectlist d-flex justify-content-around">
+                <div class="card" style="width: 18rem;">
+                    <img src="/project-1-img/project-1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            cards content.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;"> <img src="/project-1-img/project-2.jpg" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            cards content.</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                    <img src="/project-1-img/project-3.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            cards content.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- contact -->
+        <div id="contact" class="contact w-100 min-vh-100 d-flex flex-column justify-content-center">
+            <div class="feedback w-50 mx-auto">
+                <div class="feedtxt text-center text-primary mb-4">
+                    <h1>Contact Us</h1>
+                </div>
+                <div class="mb-3 ">
+                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1"
+                        placeholder="name@example.com">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Feedback</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                        placeholder="Your Feedback"></textarea>
+                </div>
+                <div class="d-grid gap-2">
+                    <button class="btn btn-primary" type="button">feedback</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="/javascript/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

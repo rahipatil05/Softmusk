@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Form with Validations</title>
+    <link rel="stylesheet" href="./validation.css" />
+</head>
+
+<body>
+    <div class="form-container">
+        <h2>Form Validation</h2>
+        <form id="signupForm" action="" method="">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" />
+                <div id="usernameError" class="error"></div>
+            </div>
+
+
+            <div class="form-group gender-group">
+                <label>Gender:</label>
+                <div class="gender-options">
+                    <label><input type="radio" id="male" name="gender" value="male"> Male</label>
+                    <label><input type="radio" id="female" name="gender" value="female"> Female</label>
+                </div>
+                <div id="genderError" class="error"></div>
+            </div>
+
+            <div class="form-group country-group">
+                <label for="country">Country:</label>
+                <select name="country" id="country" class="country">
+                    <option value="">select</option>
+                    <option value="india">India</option>
+                    <option value="usa">United States</option>
+                    <option value="uk">United Kingdom</option>
+                    <option value="canada">Canada</option>
+                    <option value="australia">Australia</option>
+                </select>
+                <div id="countryError" class="error"></div>
+            </div>
+
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" />
+                <div id="emailError" class="error"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" />
+                <div id="passwordError" class="error"></div>
+            </div>
+
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" />
+                <div id="confirmPasswordError" class="error"></div>
+            </div>
+
+
+            <div class="form-group term">
+                <div class="term-input">
+                    <label for="term">I Accept terms</label>
+                    <input type="checkbox" id="term" name="term" checked >
+                </div>
+                <div id="termError" class="error"></div>
+            </div>
+
+
+            <button type="submit" class="submit-btn">Submit</button>
+            <div id="formMessage" class="success"></div>
+        </form>
+    </div>
+
+
+    <script src="./validation.js"></script>
+</body>
+
+</html>
