@@ -11,17 +11,19 @@ async function functioncall() {
 
         console.log(data)
 
-        data.forEach(items => {
+        data.forEach(obj => {
             let div = document.createElement("div")
             let h1 = document.createElement("h1")
 
-            h1.innerHTML = `${items.name} - <span> ${items.email} </span>`
+            h1.innerHTML = `${obj.name} - <span> ${obj.email} </span>`
 
             div.appendChild(h1)
             document.body.appendChild(div)
 
-            h1.style.color = "red"
+            // h1.style.color = ""
             h1.style.fontSize = "20px"
+            h1.style.alignItems = "center"
+            h1.style.display = ""
         });
     } catch (error) {
         console.log(error)
