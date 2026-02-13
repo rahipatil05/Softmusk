@@ -1,0 +1,40 @@
+.landing {
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Horizontal video */
+.video-wrapper {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Title screen */
+.title-screen {
+  position: absolute;
+  inset: 0;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-screen h1 {
+  color: white;
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  letter-spacing: 4px;
+}
